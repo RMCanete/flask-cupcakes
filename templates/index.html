@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/cupcakes.css">
+    <title>Cupcake API</title>
+</head>
+<body>
+    <div class="container">
+      <h1 class="text-center display-1">Cupcake List</h1>
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <form id="new-cupcake-form">
+            <div>
+              <label class="col-2" for="flavor" name="flavor">
+                Flavor: 
+              </label>
+              <input name="flavor" id="flavor">
+            </div>
+            <div>
+              <label class="col-2" for="size" name="size">
+                Size: 
+              </label>
+              <input name="size" id="size">
+            </div>
+            <div>
+              <label class="col-2" type="number" for="rating" name="rating">
+                Rating: 
+              </label>
+              <input name="rating" id="rating">
+            </div>
+            <div>
+              <label class="col-2" for="image" name="image">
+                Image: 
+              </label>
+              <input name="image" id="image">
+            </div>
+            <button class="add-cupcake btn-sm btn-primary">Add cupcake</button>
+          </form>
+          <ul id="cupcake-list">
+          </ul>
+        </div>
+      </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/static/cupcakes.js"></script>
+</body>
+</html>
+
+
